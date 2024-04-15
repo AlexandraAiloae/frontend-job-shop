@@ -7,7 +7,6 @@ function App() {
   const [uploadData, setUploadData] = useState();
 
   const handleSetData = (data) => {
-    console.log("Data received and set via context:", data);
     setUploadData(data);
   };
 

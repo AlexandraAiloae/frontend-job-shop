@@ -1,13 +1,13 @@
 .file-upload-container {
   display: flex;
-  flex-direction: row; /* Align children horizontally */
-  align-items: center; /* Vertically center align the items */
+  flex-direction: row;
+  align-items: center;
   padding: 20px;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
 }
 
 .file-upload-container input[type="file"] {
-  margin-right: 10px; /* Space between the input and the button */
+  margin-right: 10px;
 }
 
 .file-upload-container button {
