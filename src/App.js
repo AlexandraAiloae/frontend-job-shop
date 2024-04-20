@@ -1,19 +1,24 @@
-import "./App.css";
 import React, { useState } from "react";
 import FileUploader from "./upload/FileUpload";
 import DisplayFileContent from "./displayFileContent/DisplayFileContent";
+import DisplaySchedule from "./displaySchedule/DisplaySchedule";
 
 function App() {
   const [uploadData, setUploadData] = useState();
 
-  const handleSetData = (data) => {
+  const handleSetData = (data, name) => {
     setUploadData(data);
   };
 
   return (
     <div className="App">
       <FileUploader onUploadSuccess={handleSetData} />
-      <DisplayFileContent data={uploadData} />
+      {uploadData && (
+        <>
+          <DisplayFileContent data={uploadData.jobShopData} />
+          <DisplaySchedule data={uploadData.scheduleData} />
+        </>
+      )}
     </div>
   );
 }

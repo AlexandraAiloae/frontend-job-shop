@@ -1,5 +1,5 @@
 import React from "react";
-import "./DisplayFileContent.css"; // Make sure the CSS path is correct
+import "./DisplayFileContent.css";
 
 function DisplayFileContent({ data }) {
   if (!data) return <div>No data available.</div>;

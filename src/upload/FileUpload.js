@@ -17,7 +17,6 @@ function FileUploader({ onUploadSuccess }) {
 
     try {
       const data = await uploadFile(selectedFile);
-      console.log(data);
       onUploadSuccess(data);
       alert("File uploaded successfully.");
     } catch (error) {

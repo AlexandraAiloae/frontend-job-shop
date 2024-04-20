@@ -1,0 +1,20 @@
+.schedule-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.part-divider {
+  margin: 20px 0;
+}
+
+.part-divider span {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.operation-item {
+  margin-bottom: 10px;
+}
